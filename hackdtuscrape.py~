@@ -28,7 +28,7 @@ for i in soup2:
      		title1="".join([str(k) for k in j.contents])
                 title=title1[5:-5]
                 
-                sql="""insert into api_NaturalRemedy(id,title,remedy) values('%ld','%s','%s')"""%(condi,title2,title)
+                sql="""insert into api_Remedy(id,title,remedy) values('%ld','%s','%s')"""%(condi,title2,title)
      		#cursor2.execute(sql)
         	print title
         	
